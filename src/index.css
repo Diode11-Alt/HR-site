@@ -8,6 +8,19 @@
   --border-light: #E2E8F0; /* Soft Slate Gray */
   --bg-workspace: #F8FAFC; /* Ghost White */
   
+  /* Backwards Compatibility */
+  --bg-primary: var(--bg-workspace);
+  --bg-secondary: #FFFFFF;
+  --text-primary: var(--primary);
+  --text-secondary: #475569;
+  --accent-color: var(--accent);
+  --accent-hover: #154b8a;
+  --accent-light: #e0f2fe;
+  
+  --shadow-sm: 0 4px 12px rgba(15, 41, 74, 0.05);
+  --shadow-md: 0 8px 24px rgba(15, 41, 74, 0.08);
+  --shadow-lg: 0 20px 40px rgba(15, 41, 74, 0.12);
+  
   /* Typography */
   --font-global: 'Inter', sans-serif;
   

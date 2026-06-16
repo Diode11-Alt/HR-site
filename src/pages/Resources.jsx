@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SEOHead from '../components/SEOHead';
 import { Download, FileText, BookOpen, AlertCircle } from 'lucide-react';
 import './Page.css';
 import './Resources.css';
@@ -22,8 +23,8 @@ const RESOURCES = [
   },
   {
     id: 3,
-    title: 'California & New York Labor Law Compliance Playbook',
-    desc: 'A summary of the critical changes in pay transparency, remote work policies, and contractor classification laws for 2026.',
+    title: 'UAE & Gulf Labor Law Compliance Playbook',
+    desc: 'A summary of the critical changes in Emiratisation, remote work policies, and contractor classification laws for 2026.',
     category: 'compliance',
     type: 'Checklist • 8 Pages',
     icon: <AlertCircle size={24} />
@@ -46,7 +47,13 @@ export default function Resources() {
     : RESOURCES.filter(r => r.category === activeCategory);
 
   return (
-    <div className="page">
+    <>
+      <SEOHead 
+        title="Resource Library | PrimePath HR"
+        description="Access expert guides, regulatory playbooks, and compensation reports compiled by our senior consulting advisors at PrimePath HR."
+        keywords="HR Resources UAE, Salary Guide Dubai, Compliance Playbook Middle East"
+      />
+      <main className="page">
       <header className="page-header">
         <div className="container">
           <h1 className="page-title">Resource Library</h1>
@@ -104,6 +111,7 @@ export default function Resources() {
           </div>
         </div>
       </section>
-    </div>
+      </main>
+    </>
   );
 }

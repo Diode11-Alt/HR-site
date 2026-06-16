@@ -1,15 +1,15 @@
 /* Shared Page Styles */
 
 .page-header {
-  background-color: var(--text-primary);
-  color: var(--bg-primary);
-  padding: var(--spacing-xxl) 0 var(--spacing-xl);
+  background-color: var(--primary);
+  color: var(--bg-workspace);
+  padding: var(--spacing-64) 0 var(--spacing-64);
   text-align: center;
 }
 
 .page-title {
-  color: var(--bg-primary);
-  margin-bottom: var(--spacing-md);
+  color: var(--bg-workspace);
+  margin-bottom: var(--spacing-32);
 }
 
 .page-subtitle {
@@ -22,7 +22,7 @@
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-64);
   align-items: center;
 }
 
@@ -36,22 +36,22 @@
 
 .feature-list {
   list-style: none;
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-32);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .feature-list li {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 1.1rem;
-  color: var(--text-primary);
+  gap: 12px;
+  font-size: 16px;
+  color: var(--text-main);
 }
 
 .icon-accent {
-  color: var(--accent-color);
+  color: var(--accent);
   flex-shrink: 0;
 }
 
@@ -66,10 +66,10 @@
 .content-image {
   width: 100%;
   aspect-ratio: 4/3;
-  border-radius: var(--border-radius-lg);
+  border-radius: var(--border-radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  border: var(--glass-border);
+  box-shadow: 0 8px 24px rgba(15, 41, 74, 0.08);
+  border: 1px solid var(--border-light);
 }
 
 .content-image img {
@@ -86,27 +86,25 @@
 .glass-panel {
   width: 100%;
   height: 100%;
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: var(--glass-border);
-  border-radius: var(--border-radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 12px rgba(15, 41, 74, 0.05);
 }
 
 .image-alt {
-  color: var(--text-secondary);
-  font-family: var(--font-heading);
+  color: var(--text-main);
+  font-family: var(--font-global);
   font-style: italic;
 }
 
 @media (max-width: 992px) {
   .content-grid {
     grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-32);
   }
   .content-grid.reverse .content-text {
     order: 1;
