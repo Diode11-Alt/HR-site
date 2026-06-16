@@ -22,7 +22,7 @@ export default function Terms() {
           <p>While we make every effort to verify job postings and client transparency, we are not responsible for final employment contract terms, workplace environments, or employer decisions.</p>
 
           <h2>4. Governing Law</h2>
-          <p>These terms are governed by the laws of the State of California, without regard to its conflict of law principles.</p>
+          <p>These terms are governed by the laws of the United Arab Emirates, without regard to its conflict of law principles.</p>
         </div>
       </section>
     </div>

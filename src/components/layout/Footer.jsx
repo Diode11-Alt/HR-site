@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, Mail, MapPin, Phone } from 'lucide-react';
+import { Linkedin, Facebook, Twitter, Mail, MapPin, Phone } from 'lucide-react';
 import './Footer.css';
 
 export default function Footer() {
@@ -13,8 +13,13 @@ export default function Footer() {
           <p className="footer-desc">
             Your premier global recruitment and manpower partner. Empowering workforce mobilization and connecting top talent to international markets.
           </p>
-          <div className="social-links">
-            {/* Social Links will be added here when available */}
+          <div className="social-links" style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)' }}>
+              <Linkedin size={24} />
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)' }}>
+              <Facebook size={24} />
+            </a>
           </div>
         </div>
 
@@ -47,7 +52,7 @@ export default function Footer() {
             </li>
             <li>
               <Mail size={16} />
-              <a href="mailto:info@primepathuae.com">info@primepathuae.com</a>
+              <a href="mailto:primepathhrservices@gmail.com">primepathhrservices@gmail.com</a>
             </li>
             <li>
               <MapPin size={16} />

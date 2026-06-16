@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 :root {
   /* Motif: Celestial Alignment (Light Theme - Midnight Navy & Amber Gold) */
   --bg-primary: #F8FAFC;
@@ -12,7 +14,7 @@
   --success-color: #16A34A;
   
   /* Typography */
-  --font-heading: 'Cormorant Garamond', serif;
+  --font-heading: 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   
@@ -139,4 +141,33 @@ button:focus-visible, .button:focus-visible, a:focus-visible, input:focus-visibl
   .section {
     padding: var(--spacing-xl) 0;
   }
+}
+
+/* Micro-interactions */
+.btn-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.btn-active:active {
+  transform: translateY(0);
+}
+
+/* Skeleton Loading Animation */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.skeleton-loading {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background-color: #e2e8f0; /* slate-200 */
+  border-radius: var(--border-radius-sm);
+  color: transparent !important;
+}
+.skeleton-loading * {
+  visibility: hidden;
 }

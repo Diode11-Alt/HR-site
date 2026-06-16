@@ -117,21 +117,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="section bg-white">
-        <div className="container">
-          <h2 className="section-title text-center">What Our Clients Say</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
-            <div style={{ padding: '2rem', background: '#f8fafc', borderRadius: '8px', borderLeft: '4px solid var(--accent-color)' }}>
-              <Star fill="var(--accent-color)" color="var(--accent-color)" size={20} />
-              <p style={{ marginTop: '1rem', fontStyle: 'italic', lineHeight: '1.6' }}>"Partnering with PrimePath UAE transformed our talent acquisition process. They rapidly supplied highly qualified, vetted professionals for our large-scale development projects, ensuring full compliance and seamless international mobilization."</p>
-              <h4 style={{ marginTop: '1rem' }}>- HR Director, Premier Construction Firm, UAE</h4>
-            </div>
-            <div style={{ padding: '2rem', background: '#f8fafc', borderRadius: '8px', borderLeft: '4px solid var(--accent-color)' }}>
-              <Star fill="var(--accent-color)" color="var(--accent-color)" size={20} />
-              <p style={{ marginTop: '1rem', fontStyle: 'italic', lineHeight: '1.6' }}>"PrimePath's overseas recruitment experts guided me through every step—from interview preparation to visa documentation. Thanks to their transparent process, I successfully secured a rewarding career in Europe."</p>
-              <h4 style={{ marginTop: '1rem' }}>- Technical Specialist, Placed in Europe</h4>
-            </div>
+      {/* Trusted By Banner */}
+      <section className="section bg-white" style={{ padding: '4rem 0', borderTop: '1px solid #e2e8f0' }}>
+        <div className="container text-center">
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '2rem' }}>Trusted By Leading Global Enterprises</p>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '4rem', opacity: 0.6, filter: 'grayscale(100%)' }}>
+            <h3 style={{ margin: 0, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>Census Holdings</h3>
+            <h3 style={{ margin: 0, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>Fortune First</h3>
+            <h3 style={{ margin: 0, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>Global Tech</h3>
+            <h3 style={{ margin: 0, fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>BuildCorp UAE</h3>
           </div>
         </div>
       </section>

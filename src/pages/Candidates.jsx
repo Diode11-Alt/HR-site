@@ -49,7 +49,7 @@ export default function Candidates() {
         <div className="container">
           <h2>Ready for Your Next Big Move?</h2>
           <p style={{ margin: '1rem auto 2rem', maxWidth: '600px' }}>Register with us today to start applying for jobs globally.</p>
-          <Link to="/portal" className="button button-primary" style={{ padding: '1rem 3rem', fontSize: '1.2rem' }}>Apply for Opportunities</Link>
+          <Link to="/contact" className="button button-primary" style={{ padding: '1rem 3rem', fontSize: '1.2rem' }}>Apply for Opportunities</Link>
         </div>
       </section>
     </div>
