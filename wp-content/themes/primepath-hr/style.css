@@ -1,0 +1,53 @@
+/*
+Theme Name: PrimePath HR
+Theme URI: https://primepathuae.com
+Author: PrimePath
+Author URI: https://primepathuae.com
+Description: Custom Editorial Theme for PrimePath HR Portal.
+Version: 1.0.0
+License: Proprietary
+Text Domain: primepath-hr
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand Colors */
+  --gold: #C9A84C;
+  --gold-light: #E8C96A;
+  --gold-dark: #A6882A;
+  --navy: #0D1B2A;
+  --navy-mid: #162233;
+  --navy-light: #1E3048;
+  --slate: #2D4A6B;
+
+  /* Neutral */
+  --white: #F7F5F0;
+  --white-dim: #E8E4DC;
+  --gray: #94A3B8;
+  --gray-dark: #64748B;
+
+  /* Status */
+  --success: #22C55E;
+  --danger: #EF4444;
+  --warning: #F59E0B;
+  --info: #3B82F6;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Spacing & Shape */
+  --radius: 6px;
+  --radius-lg: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.3);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.15);
+  --sidebar-w: 260px;
+  --topbar-h: 64px;
+  --max-width: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--navy); color: var(--white); font-family: var(--font-body); }
+a { color: var(--gold); text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
