@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEOHead from '../components/SEOHead';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import './Contact.css';
 
@@ -39,77 +39,90 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact-page">
-      <Helmet>
-        <title>Contact Us | PrimePath UAE</title>
-        <meta name="description" content="Contact PrimePath UAE for international recruitment inquiries, manpower supply, and overseas job assistance." />
-      </Helmet>
+    <>
+      <SEOHead 
+        title="Contact Us | PrimePath HR"
+        description="Contact PrimePath HR for international recruitment inquiries, corporate hiring solutions, and executive search services."
+        keywords="Contact PrimePath HR, UAE Recruitment Agency Contact, Dubai Staffing Phone Number"
+      />
 
-      <section className="section bg-light">
-        <div className="container">
-          <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
-            <div className="contact-info">
-              <h1 style={{ color: 'var(--text-primary)' }}>Get In Touch</h1>
-              <p style={{ marginBottom: '2rem' }}>Whether you're an employer looking to hire or a candidate seeking opportunities, our team is ready to assist you.</p>
+      <main>
+        <section className="section bg-workspace">
+          <div className="container">
+            <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-64)' }}>
               
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '3rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <div style={{ background: 'var(--accent-light)', padding: '1rem', borderRadius: '50%' }}>
-                    <MapPin color="var(--accent-color)" />
+              <article className="contact-info">
+                <h1>Get In Touch</h1>
+                <p>
+                  Whether you are an enterprise seeking scalable hiring infrastructure or an executive professional pursuing deployment, our team is ready to consult.
+                </p>
+                
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-32)', marginTop: 'var(--spacing-32)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-16)' }}>
+                    <div style={{ padding: 'var(--spacing-16)', border: '1px solid var(--border-light)', borderRadius: 'var(--border-radius-sm)' }}>
+                      <MapPin color="var(--primary)" />
+                    </div>
+                    <div>
+                      <h2 style={{ margin: 0, fontSize: '18px' }}>Headquarters</h2>
+                      <p style={{ margin: 0, fontSize: '14px' }}>Census Holdings Office, Dubai, UAE</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 style={{ margin: 0 }}>Headquarters</h4>
-                    <p style={{ margin: 0 }}>Census Holdings Office, Dubai, UAE</p>
+                  
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-16)' }}>
+                    <div style={{ padding: 'var(--spacing-16)', border: '1px solid var(--border-light)', borderRadius: 'var(--border-radius-sm)' }}>
+                      <Phone color="var(--primary)" />
+                    </div>
+                    <div>
+                      <h2 style={{ margin: 0, fontSize: '18px' }}>Phone</h2>
+                      <p style={{ margin: 0, fontSize: '14px' }}>
+                        <a href="tel:+971543632142" style={{ textDecoration: 'none', color: 'inherit' }}>+971 54 363 2142</a>
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-16)' }}>
+                    <div style={{ padding: 'var(--spacing-16)', border: '1px solid var(--border-light)', borderRadius: 'var(--border-radius-sm)' }}>
+                      <Mail color="var(--primary)" />
+                    </div>
+                    <div>
+                      <h2 style={{ margin: 0, fontSize: '18px' }}>Email</h2>
+                      <p style={{ margin: 0, fontSize: '14px' }}>primepathhrservices@gmail.com</p>
+                    </div>
                   </div>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <div style={{ background: 'var(--accent-light)', padding: '1rem', borderRadius: '50%' }}>
-                    <Phone color="var(--accent-color)" />
-                  </div>
-                  <div>
-                    <h4 style={{ margin: 0 }}>Phone</h4>
-                    <p style={{ margin: 0 }}><a href="tel:+971543632142" style={{textDecoration: 'none', color: 'inherit'}}>+971 54 363 2142</a></p>
-                  </div>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <div style={{ background: 'var(--accent-light)', padding: '1rem', borderRadius: '50%' }}>
-                    <Mail color="var(--accent-color)" />
-                  </div>
-                  <div>
-                    <h4 style={{ margin: 0 }}>Email</h4>
-                    <p style={{ margin: 0 }}>info@primepathuae.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </article>
 
-            <div className="contact-form-container" style={{ background: 'white', padding: '3rem', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}>
-              <h2 style={{ marginBottom: '2rem' }}>Send Us a Message</h2>
-              {status && <div style={{ padding: '1rem', background: '#dcfce7', color: '#16a34a', borderRadius: '8px', marginBottom: '1rem' }}>{status}</div>}
-              
-              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                <div className="form-group">
-                  <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Full Name</label>
-                  <input type="text" name="name" required style={{ width: '100%', padding: '0.8rem', border: '1px solid #cbd5e1', borderRadius: '4px' }} placeholder="Your Name" />
-                </div>
-                <div className="form-group">
-                  <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Email Address</label>
-                  <input type="email" name="email" required style={{ width: '100%', padding: '0.8rem', border: '1px solid #cbd5e1', borderRadius: '4px' }} placeholder="you@example.com" />
-                </div>
-                <div className="form-group">
-                  <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Phone Number</label>
-                  <input type="tel" name="phone" required style={{ width: '100%', padding: '0.8rem', border: '1px solid #cbd5e1', borderRadius: '4px' }} placeholder="+971..." />
-                </div>
-                <div className="form-group">
-                  <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Message</label>
-                  <textarea name="message" rows="4" required style={{ width: '100%', padding: '0.8rem', border: '1px solid #cbd5e1', borderRadius: '4px', resize: 'vertical' }} placeholder="How can we help you?"></textarea>
-                </div>
-                <button type="submit" disabled={loading} className="button button-primary" style={{ width: '100%' }}>{loading ? 'Submitting...' : 'Submit Inquiry'}</button>
-              </form>
+              <article className="contact-form-container" style={{ background: '#FFFFFF', padding: 'var(--spacing-32)', borderRadius: 'var(--border-radius-md)', border: '1px solid var(--border-light)' }}>
+                <h2 style={{ fontSize: '24px', marginBottom: 'var(--spacing-32)' }}>Send Us a Message</h2>
+                {status && <div style={{ padding: 'var(--spacing-16)', background: 'var(--bg-workspace)', color: 'var(--primary)', borderRadius: 'var(--border-radius-sm)', marginBottom: 'var(--spacing-16)', border: '1px solid var(--border-light)' }}>{status}</div>}
+                
+                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-16)' }}>
+                  <div className="form-group">
+                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Full Name</label>
+                    <input type="text" name="name" required style={{ width: '100%', padding: '12px', border: '1px solid var(--border-light)', borderRadius: 'var(--border-radius-sm)' }} placeholder="Corporate Identifier or Name" />
+                  </div>
+                  <div className="form-group">
+                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Email Address</label>
+                    <input type="email" name="email" required style={{ width: '100%', padding: '12px', border: '1px solid var(--border-light)', borderRadius: 'var(--border-radius-sm)' }} placeholder="contact@enterprise.com" />
+                  </div>
+                  <div className="form-group">
+                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Phone Number</label>
+                    <input type="tel" name="phone" required style={{ width: '100%', padding: '12px', border: '1px solid var(--border-light)', borderRadius: 'var(--border-radius-sm)' }} placeholder="+971..." />
+                  </div>
+                  <div className="form-group">
+                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 600 }}>Message</label>
+                    <textarea name="message" rows="4" required style={{ width: '100%', padding: '12px', border: '1px solid var(--border-light)', borderRadius: 'var(--border-radius-sm)', resize: 'vertical' }} placeholder="Specify your resourcing requirements..."></textarea>
+                  </div>
+                  <button type="submit" disabled={loading} className={`button button-primary ${loading ? 'skeleton-loading' : 'btn-hover'}`} style={{ width: '100%', marginTop: 'var(--spacing-16)' }}>
+                    {loading ? 'Processing...' : 'Submit Inquiry'}
+                  </button>
+                </form>
+              </article>
+
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </main>
+    </>
   );
 }
