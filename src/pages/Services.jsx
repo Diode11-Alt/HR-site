@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Helmet } from 'react-helmet-async';
 import { Briefcase, Building, CheckCircle, Globe2, FileText, Users2, Plane, GraduationCap, Map } from 'lucide-react';
 

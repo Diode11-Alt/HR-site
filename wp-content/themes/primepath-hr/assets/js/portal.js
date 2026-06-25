@@ -55,11 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     msg.style.color = 'white';
                     msg.textContent = data.data || 'Failed to update profile.';
                 }
-            } catch (err) {
+            } catch (error) {
+                console.error(error);
                 msg.style.display = 'block';
                 msg.style.backgroundColor = 'var(--danger)';
                 msg.style.color = 'white';
-                msg.textContent = 'Network error.';
+                msg.textContent = 'Network Error.';
             }
             
             btn.disabled = false;

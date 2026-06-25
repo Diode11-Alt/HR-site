@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SEOHead from '../components/SEOHead';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import './Contact.css';

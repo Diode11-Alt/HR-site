@@ -1,7 +1,7 @@
 .footer {
-  background-color: var(--text-primary);
-  color: var(--bg-primary);
-  padding-top: var(--spacing-xl);
+  background-color: var(--navy);
+  color: var(--white);
+  padding-top: var(--spacing-64);
 }
 
 .footer-grid {
@@ -15,19 +15,19 @@
   font-family: var(--font-heading);
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--bg-primary);
+  color: var(--gold);
   display: inline-block;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-16);
 }
 
 .footer-logo span {
-  color: var(--accent-color);
+  color: var(--white);
 }
 
 .footer-desc {
-  color: var(--text-secondary);
+  color: var(--white-dim);
   font-size: 0.95rem;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-32);
   max-width: 400px;
 }
 
@@ -37,20 +37,20 @@
 }
 
 .social-links a {
-  color: var(--text-secondary);
+  color: var(--white-dim);
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: var(--accent-color);
+  color: var(--gold);
 }
 
 .footer h3 {
-  color: var(--bg-primary);
-  font-family: var(--font-body);
+  color: var(--white);
+  font-family: var(--font-global);
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-32);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -65,32 +65,32 @@
 
 .footer-links a,
 .footer-contact a {
-  color: var(--text-secondary);
+  color: var(--white-dim);
   font-size: 0.95rem;
 }
 
 .footer-links a:hover,
 .footer-contact a:hover {
-  color: var(--accent-color);
+  color: var(--gold);
 }
 
 .footer-contact li {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--white-dim);
   font-size: 0.95rem;
 }
 
 .footer-contact li svg {
   margin-top: 0.25rem;
   flex-shrink: 0;
-  color: var(--accent-color);
+  color: var(--gold);
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: var(--spacing-md) 0;
+  padding: var(--spacing-32) 0;
 }
 
 .footer-bottom .container {
@@ -102,7 +102,7 @@
 }
 
 .footer-bottom p {
-  color: var(--text-secondary);
+  color: var(--white-dim);
   font-size: 0.85rem;
   margin: 0;
 }
@@ -113,12 +113,12 @@
 }
 
 .legal-links a {
-  color: var(--text-secondary);
+  color: var(--white-dim);
   font-size: 0.85rem;
 }
 
 .legal-links a:hover {
-  color: var(--accent-color);
+  color: var(--gold);
 }
 
 @media (max-width: 992px) {

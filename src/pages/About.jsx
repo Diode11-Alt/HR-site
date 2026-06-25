@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Helmet } from 'react-helmet-async';
 import { Target, Eye, Heart, ShieldCheck, Zap, Handshake, Users, Award } from 'lucide-react';
 

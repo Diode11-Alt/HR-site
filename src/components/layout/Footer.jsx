@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Linkedin, Facebook, Twitter, Mail, MapPin, Phone } from 'lucide-react';
+import { Linkedin, Facebook, Mail, MapPin, Phone } from 'lucide-react';
 import './Footer.css';
 
 export default function Footer() {
@@ -14,10 +14,10 @@ export default function Footer() {
             Your premier global recruitment and manpower partner. Empowering workforce mobilization and connecting top talent to international markets.
           </p>
           <div className="social-links" style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)' }}>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--white-dim)' }}>
               <Linkedin size={24} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)' }}>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--white-dim)' }}>
               <Facebook size={24} />
             </a>
           </div>
