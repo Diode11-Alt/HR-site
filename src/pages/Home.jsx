@@ -1,13 +1,7 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/SEOHead';
 
-const COUNTRIES = [
-  { name: 'United Arab Emirates (UAE)', code: 'AE' },
-  { name: 'Saudi Arabia (KSA)', code: 'SA' },
-  { name: 'Croatia', code: 'HR' },
-  { name: 'Romania', code: 'RO' }
-];
 
 export default function Home() {
   return (

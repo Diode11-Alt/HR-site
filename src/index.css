@@ -1,28 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Corporate SEO Blueprint Motif */
-  --primary: #0F294A; /* Corporate Deep Navy */
-  --accent: #1C64B4; /* Slate Blue Accent */
-  --text-main: #1A202C; /* Charcoal Ink */
-  --border-light: #E2E8F0; /* Soft Slate Gray */
-  --bg-workspace: #F8FAFC; /* Ghost White */
+  /* Brand Colors */
+  --gold: #C9A84C;
+  --gold-light: #E8C96A;
+  --gold-dark: #A6882A;
+  --navy: #0D1B2A;
+  --navy-mid: #162233;
+  --navy-light: #1E3048;
+  --slate: #2D4A6B;
+
+  /* Neutral */
+  --white: #F7F5F0;
+  --white-dim: #E8E4DC;
+  --gray: #94A3B8;
+  --gray-dark: #64748B;
+
+  /* Status */
+  --success: #22C55E;
+  --danger: #EF4444;
+  --warning: #F59E0B;
+  --info: #3B82F6;
+
+  /* Backwards Compatibility & Mapping */
+  --primary: var(--navy);
+  --accent: var(--gold);
+  --text-main: var(--white);
+  --border-light: var(--slate);
+  --bg-workspace: var(--navy);
   
-  /* Backwards Compatibility */
-  --bg-primary: var(--bg-workspace);
-  --bg-secondary: #FFFFFF;
-  --text-primary: var(--primary);
-  --text-secondary: #475569;
-  --accent-color: var(--accent);
-  --accent-hover: #154b8a;
-  --accent-light: #e0f2fe;
+  --bg-primary: var(--navy);
+  --bg-secondary: var(--navy-mid);
+  --text-primary: var(--gold);
+  --text-secondary: var(--white-dim);
+  --accent-color: var(--gold);
+  --accent-hover: var(--gold-light);
+  --accent-light: var(--gold-light);
   
   --shadow-sm: 0 4px 12px rgba(15, 41, 74, 0.05);
   --shadow-md: 0 8px 24px rgba(15, 41, 74, 0.08);
   --shadow-lg: 0 20px 40px rgba(15, 41, 74, 0.12);
   
   /* Typography */
-  --font-global: 'Inter', sans-serif;
+  --font-global: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
   
   /* Layout & Spacing */
   --spacing-8: 8px;
@@ -50,9 +71,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-global);
+  font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--primary);
+  color: var(--text-main);
   margin-bottom: var(--spacing-16);
 }
 
@@ -102,22 +123,23 @@ button, .button {
 
 .button-primary {
   background-color: var(--accent);
-  color: #FFFFFF;
+  color: var(--navy);
 }
 
 .button-primary:hover {
-  background-color: var(--primary);
+  background-color: var(--gold-light);
   transform: translateY(-2px);
 }
 
 .button-outline {
   background-color: transparent;
-  color: var(--primary);
-  border: 1px solid var(--border-light);
+  color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .button-outline:hover {
-  background-color: var(--border-light);
+  background-color: var(--accent);
+  color: var(--navy);
 }
 
 button:focus-visible, .button:focus-visible, a:focus-visible, input:focus-visible {

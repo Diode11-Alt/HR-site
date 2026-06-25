@@ -1,3 +1,4 @@
+/* global jQuery, pp_ajax */
 jQuery(document).ready(function($) {
     
     // Update Job Status
